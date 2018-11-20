@@ -15,6 +15,9 @@ text-align: center;
 
 
 }
+.icon{
+  color:white;
+}
 h2{
 //text-align: right;
 color: black
@@ -22,7 +25,7 @@ color: black
 ion-col{
 text-align: cenetr;
 }
-}
+
 h3{
   
   font-weight: bold;
@@ -34,4 +37,10 @@ h3{
   -moz-border-radius: 50px / 50px;
   -webkit-border-radius: 50px / 50px;
   border-radius: 50px / 50px;
+}
+.toolbar-background {
+  background-color: #38B6FF;
+  color: white;
+}
+
 }

@@ -20,6 +20,7 @@ import { firebaseConfig } from './firebase.config';
 import { NewsDetailPage } from '../pages/news-detail/news-detail';
 import { AboutUsPage } from '../pages/about-us/about-us';
 import { FCM } from '@ionic-native/fcm';
+import { EmailComposer } from '@ionic-native/email-composer';
 
 
 
@@ -57,6 +58,7 @@ import { FCM } from '@ionic-native/fcm';
   providers: [
     StatusBar,
     AngularFireDatabase,
+    EmailComposer,
     FCM,
     AuthProvider,
     {provide: ErrorHandler, useClass: IonicErrorHandler},

@@ -6,86 +6,38 @@
 -->
 <ion-header>
 
-  <ion-navbar color="nav">
-    <ion-title> About </ion-title>
+  <ion-navbar >
+    <ion-title><h3 style="color:white">Contact us</h3>  </ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content>
-<ion-card>
-  <img src="assets/imgs/logo2.jpg">
-  <ion-card-content style="margin-top:45px">
-          <ion-list>
-              <ion-item>
-                <ion-thumbnail item-end>
-                  <img id="oval-shape" src="assets/imgs/ali.jpg">
-                </ion-thumbnail>
-                <h3 style="font-weight: bold;"> Ali Jassim </h3>
-                <ion-row>
-                <ion-note style="color:black">
-                  Developer
-                </ion-note>
-              </ion-row>
-              
-              </ion-item>
-              </ion-list>
-              <ion-list>
-                  <ion-item>
-                    <ion-thumbnail item-end>
-                        <img id="oval-shape" src="assets/imgs/ameer.jpg">
-
-                    </ion-thumbnail>
-                    <h3 style="font-weight: bold;"> Ameer Alwardi </h3>
-                    <ion-row>
-                    <ion-note style="color:black">
-                      Graphic designer
-                    </ion-note>
-                  </ion-row>
-                  <ion-row>
-                    <ion-note style="color:black">
-                      and
-                     Developer
-                    </ion-note>
-                  </ion-row>
-                  </ion-item>
-                  </ion-list>
-                  <ion-list>
-                      <ion-item>
-                        <ion-thumbnail item-end>
-                          <img id="oval-shape" src="assets/imgs/mohammed.jpg">
-                        </ion-thumbnail>
-                        <h3 style="font-weight: bold;"> Mohammed Almaliky </h3>
-                        <ion-row>
-                        <ion-note style="color:black">
-                          Developer
-                        
-                        </ion-note>
-                      </ion-row>
-                      <ion-row>
-                          <ion-note style="color:black">
-                            and Designer
-                        
-                          
-                          </ion-note>
-                        </ion-row>
-                        </ion-item>
-                  </ion-list>
-                  <ion-list>
-                      <ion-item>
-                        <ion-thumbnail item-end>
-                          <img id="oval-shape" src="assets/imgs/karem.jpg">
-                        </ion-thumbnail>
-                        <h3 style="font-weight: bold;"> Kareem Alssadi </h3>
-                        <ion-row>
-                        <ion-note style="color:black" >
-                          Iot lab founder
-                        </ion-note>
-                      </ion-row>
-                      
-                      </ion-item>
-                      </ion-list>
-  </ion-card-content>
-</ion-card>
+<ion-content padding>
+<div padding style="text-align: center">
+<img src="assets/imgs/kkkkkkkkk1.png" style="width: 150px; height: 150px;">
+</div>
+<div style="text-align: center; background-color: #F5F5F5">
+  <p style="text-align: left; padding: 10px;">
+    we are here to answer any question you may have about our services .reach out to us and we'll respond as soon as we can
+  </p>
+</div>
+<div padding>
+  <ion-list no-lines>
+    <ion-item>
+      <ion-label stacked > Name </ion-label>
+      <ion-input type="text" [(ngModel)]="subject"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label stacked > Message </ion-label>
+        <ion-textarea type="text" [(ngModel)]="body"></ion-textarea>
+      </ion-item>
+  </ion-list>
+</div>
+<div padding>
+    <button ion-button small style="background-color: rgb(255, 122, 203)" [disabled]="check()" (click)="send()"> Send </button> 
+    <ion-icon name="mail" color="black"></ion-icon>
+<p>kiotik.info@gmail.com</p>
+    <p>+964771660927</p>
+</div>
 </ion-content>
